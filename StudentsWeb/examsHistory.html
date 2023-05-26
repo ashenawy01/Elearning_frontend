@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BUE e-learning system">
+    <meta name="keywords" content="BUE, e-learning system, bue, BUE system">
+    <meta name="author" content="Abdelrhman Elshenawy">
+    <title>Exams</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../footerStyle.css">
+    <link rel="stylesheet" href="ExamsStyle.css">
+</head>
+
+<body>
+
+    <nav>
+        <img id="logo" src="../Images/newLogo.png" alt="Logo" onclick="location.href='home.html'">
+        <div class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="SRS.html" id="srs">SRS</a></li>
+                <li><a href="cengage.html">Tasks</a></li>
+                <li><a href="examsHistory.html"><span class="onClicked">Exams</span></a></li>
+                <li><a href="Grades.html">Grades</a></li>
+            </ul>
+        </div>
+        <div class="personalCard" onclick="displayCard()">
+            <p>Abdelrhman</p>
+            <img src="../Images/avatar.jpg" alt="avatare">
+        </div>
+        <div class="clickedCard display" id="clcCard">
+            <div class="header">
+                <p>The British University in Egypt</p>
+                <div class="accName" onclick="location.href='../Login forms/index.html'">
+                    <p>Sign out</p>
+                </div>
+            </div>
+            <div class="body">
+                <img src="../Images/avatar.jpg" alt="avatar">
+                <div class="info">
+                    <p>Abdelrhman Elshenawy</p>
+                    <p>225328</p>
+                    <p>abd.elrhman225328@bue.edu.eg</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <img id="ExamBanner" src="../Images/ExamBanner.jpg" alt="Exam Banner">
+
+        <div class="content" style="width: 100%; height: 50px;">
+
+        </div>
+
+        <h2>Exams List</h2>
+
+        <div class="ModuleSelect">
+            <button class="ModuleSelectbutton">Select Your Module</button>
+            <div class="ModuleSelect-content">
+                <a href="#">Physics</a>
+                <a href="#">Web-Programming</a>
+                <a href="#">Math II</a>
+            </div>
+        </div>
+
+
+        <div>
+            <table id="Exams">
+                <tr>
+                    <th>No.</th>
+                    <th>Exams</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Virtual-Lab 1</td>
+                    <td>3/8/2022</td>
+                    <td>Expired</td>
+                    <td>
+                        <button onclick="location.href= 'exam.html'">Start</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Virtual-Lab 2</td>
+                    <td>6/8/2022</td>
+                    <td>On-going</td>
+                    <td>
+                        <button onclick="location.href= 'exam.html'">Start</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Virtual-Lab 3</td>
+                    <td>16/8/2022</td>
+                    <td>On-going</td>
+                    <td>
+                        <button onclick="location.href= 'exam.html'">Complete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>In-class Test 2</td>
+                    <td>11/8/2022</td>
+                    <td>Not Due</td>
+                    <td>
+                        <button onclick="location.href= 'exam.html'">Start</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Final </td>
+                    <td>4/9/2022</td>
+                    <td>Not Due</td>
+                    <td>
+                        <button onclick="location.href= 'exam.html'">Complete</button>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="info">
+            <div class="support">
+                <h1>Technical Support:</h1>
+                <a href="mailto:seif.yasser@bue.edu.eg">seif.yasser@bue.edu.eg</a>
+                <a href="mailto:islam.yasser@bue.edu.eg">islam.yasser@bue.edu.eg</a>
+                <div class="socialIcons">
+                    <a href="https://www.bue.edu.eg/" target="_blank"><img src="../Images/website_icon.png"
+                            alt="website"></a>
+                    <a href="https://www.facebook.com/thebritishuniversityegypt" target="_blank"><img
+                            src="../Images/facebook_icon.png" alt="Facebbok"></a>
+                    <a href="https://twitter.com/bue_university" target="_blank"><img src="../Images/twitter_icon.png"
+                            alt="Twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCqvAvU8X3_3cmRZexwPhucg" target="_blank"><img
+                            src="../Images/youtube_icon.png" alt="YouTube"></a>
+                    <a href="https://www.instagram.com/thebritishuniversityinegypt/" target="_blank"><img
+                            src="../Images/instagram_icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="contact">
+                <h1>Contact</h1>
+                <div class="contactIcons">
+                    <a target="_blank" href="mailto:info.bue.edu.eg"><img src="../Images/email.png" alt="email"></a>
+                    <a target="_blank" href="tel:+2019283"><img src="../Images/call.png" alt="call"></a>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">
+                        <img src="../Images/location.png" alt="email"></a>
+                </div>
+                <div class="contactText">
+                    <a target="_blank" href="mailto:info.bue.edu.eg" class="textContact">info.bue.edu.eg</a>
+                    <a target="_blank" href="tel:+2019283" class="textContact">+20 19283</a>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">
+                        El Sherouk City, Suez Desert Road,<br>Cairo 11837 - P.O. Box 43</a>
+                </div>
+            </div>
+
+            <div class="links">
+                <h1>Quick Links</h1>
+
+                <ul>
+                    <li><img src="../Images/arrow_icon.png" alt="home"><a href="home.html">Home</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="SRS"><a href="SRS.html">SRS</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="Tasks"><a href="cengage.html">Tasks</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="Exams"><a href="examsHistory.html">Exams</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="Grades"><a href="Grades.html">Grades</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyRight">
+            <img src="../Images/newLogo.png" alt="home">
+            <p>Copyright &copy; 2020 BUE , All rights reserved. Last Updated January 2022.</p>
+        </div>
+        <img src="../Images/buePic.png" alt="BUE" class="footerPic">
+    </footer>
+    <script src="Sscript.js"></script>
+</body>
+
+</html>

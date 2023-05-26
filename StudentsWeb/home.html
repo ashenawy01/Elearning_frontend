@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BUE e-learning system">
+    <meta name="keywords" content="BUE, e-learning system, bue, BUE system">
+    <meta name="author" content="Abdelrhman Elshenawy">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../footerStyle.css">
+    <link rel="stylesheet" href="homeStyle.css">
+</head>
+
+
+<body>
+    <nav>
+        <img id="logo" src="../Images/newLogo.png" alt="Logo" onclick="location.href='home.html'">
+        <div class="menu">
+            <ul>
+                <li><a href="home.html"><span class="onClicked">Home</span></a></li>
+                <li><a href="SRS.html" id="srs">SRS</a></li>
+                <li><a href="cengage.html">Tasks</a></li>
+                <li><a href="examsHistory.html">Exams</a></li>
+                <li><a href="Grades.html">Grades</a></li>
+            </ul>
+        </div>
+        <div class="personalCard" onclick="displayCard()">
+            <p>Abdelrhman</p>
+            <img src="../Images/avatar.jpg" alt="avatare">
+        </div>
+        <div class="clickedCard display" id="clcCard">
+            <div class="header">
+                <p>The British University in Egypt</p>
+                <div class="accName" onclick="location.href='../Login forms/index.html'">
+                    <p>Sign out</p>
+                </div>
+            </div>
+            <div class="body">
+                <img src="../Images/avatar.jpg" alt="avatar">
+                <div class="info">
+                    <p>Abdelrhman Elshenawy</p>
+                    <p>225328</p>
+                    <p>abd.elrhman225328@bue.edu.eg</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="boxes">
+            <div class="Tsupport">
+                <h1>For technical support</h1>
+                <h3>* Send an email *</h3>
+                <h5>seif.yasser@bue.edu.eg</h5>
+                <h5>islam.yasser@bue.edu.eg</h5>
+                <h3 style="font-size: 1.2vw;">* Pass by the E-Learning Office *</h3>
+                <h5>Building H - First Floor - 109</h5>
+                <h5 id="workHours">From Sunday to Thursday <br> 9 AM to 4 PM</h5>
+            </div>
+
+            <div class="calendar">
+
+                <div class="month">
+                    <ul>
+                        <li class="prev"><a href="">&#10094;</a></li>
+                        <li class="next"><a href="">&#10095;</a></li>
+                        <li>
+                            April<br>
+                            <span style="font-size:18px">2022</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="weekdays">
+                    <li>Fr</li>
+                    <li>Sa</li>
+                    <li>Su</li>
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                </ul>
+
+                <ul class="days">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li><span class="active">8</span></li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="courses">
+            <select name="sort" id="sort">
+                <option value="all">All courses</option>
+                <option value="inProg" id="inProg">In progress</option>
+                <option value="pastSem">This semester</option>
+                <option value="thisYear">This year</option>
+            </select>
+            <div class="course">
+                <div class="card">
+                    <img src="../Images/programming.png" alt="course picture">
+
+                    <div class="title">
+                        <h1>Introduction to C++</h1>
+                    </div>
+                    <div class="des">
+                        <progress value="32" max="100"> 32% </progress>
+                        <h1>34%</h1>
+                        <br>
+                        <button onclick="location.href = 'course.html'">complete</button>
+                    </div>
+                </div>
+
+                <div class="start card">
+                    <img alt="course picture" src="../Images/math.jpeg">
+                    <div class="title">
+                        <h1>Math ll</h1>
+                    </div>
+                    <div class="des">
+                        <progress value="0" max="100"> 0% </progress>
+                        <h1>0%</h1>
+                        <br>
+                        <button onclick="location.href = 'course.html'">complete</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../Images/web.png" alt="course picture">
+                    <div class="title">
+                        <h1>Web development</h1>
+                    </div>
+                    <div class="des">
+                        <progress value="55" max="100"> 55% </progress>
+                        <h1>55%</h1>
+                        <br>
+                        <button onclick="location.href = 'course.html'">complete</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../Images/physics.jpg" alt="course picture">
+
+                    <div class="title">
+                        <h1>Physics</h1>
+                    </div>
+                    <div class="des">
+                        <progress value="21" max="100"> 21% </progress>
+                        <h1>21%</h1>
+                        <br>
+                        <button onclick="location.href = 'course.html'">complete</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../Images/english.jpg" alt="course picture">
+
+                    <div class="title">
+                        <h1>English</h1>
+                    </div>
+                    <div class="des">
+                        <progress value="86" max="100"> 86% </progress>
+                        <h1>86%</h1>
+                        <br>
+                        <button onclick="location.href = 'course.html'">complete</button>
+                    </div>
+                </div>
+
+
+                <div class="start card">
+                    <img alt="course picture" src="../Images/is.jfif">
+
+                    <div class="title">
+                        <h1>Information System</h1>
+                    </div>
+                    <div class="des">
+                        <progress value="0" max="100"> 0% </progress>
+                        <h1>0%</h1>
+                        <br>
+                        <button onclick="location.href = 'course.html'">complete</button>
+                    </div>
+                </div>
+
+                <div class="card past">
+                    <img src="../Images/descrest.png" alt="course card">
+                    <div class="title">
+                        <h1>Descrete Math</h1>
+                    </div>
+                    <div class="des">
+                        <progress value="55" max="100"> 58% </progress>
+                        <h1>58%</h1>
+                        <br>
+                        <button onclick="location.href = 'course.html'">complete</button>
+                    </div>
+                </div>
+
+                <div class="card past">
+                    <img src="../Images/humanities.jpg" alt="course card">
+
+                    <div class="title">
+                        <h1>Humanities</h1>
+                    </div>
+                    <div class="des">
+                        <progress value="21" max="100"> 21% </progress>
+                        <h1>21%</h1>
+                        <br>
+                        <button onclick="location.href = 'course.html'">complete</button>
+                    </div>
+                </div>
+
+                <div class="card past">
+                    <img src="../Images/scientificT.jpg" alt="course card">
+                    <div class="title">
+                        <h1>Scientific Thinking</h1>
+                    </div>
+                    <div class="des">
+                        <progress value="86" max="100"> 95% </progress>
+                        <h1>95%</h1>
+                        <br>
+                        <button onclick="location.href = 'course.html'">complete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="info">
+            <div class="support">
+                <h1>Technical Support:</h1>
+                <a href="mailto:seif.yasser@bue.edu.eg">seif.yasser@bue.edu.eg</a>
+                <a href="mailto:islam.yasser@bue.edu.eg">islam.yasser@bue.edu.eg</a>
+                <div class="socialIcons">
+                    <a href="https://www.bue.edu.eg/" target="_blank"><img src="../Images/website_icon.png"
+                            alt="website"></a>
+                    <a href="https://www.facebook.com/thebritishuniversityegypt" target="_blank"><img
+                            src="../Images/facebook_icon.png" alt="Facebbok"></a>
+                    <a href="https://twitter.com/bue_university" target="_blank"><img src="../Images/twitter_icon.png"
+                            alt="Twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCqvAvU8X3_3cmRZexwPhucg" target="_blank"><img
+                            src="../Images/youtube_icon.png" alt="YouTube"></a>
+                    <a href="https://www.instagram.com/thebritishuniversityinegypt/" target="_blank"><img
+                            src="../Images/instagram_icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="contact">
+                <h1>Contact</h1>
+                <div class="contactIcons">
+                    <a target="_blank" href="mailto:info.bue.edu.eg"><img src="../Images/email.png" alt="email"></a>
+                    <a target="_blank" href="tel:+2019283"><img src="../Images/call.png" alt="call"></a>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">
+                        <img src="../Images/location.png" alt="email"></a>
+                </div>
+                <div class="contactText">
+                    <a target="_blank" href="mailto:info.bue.edu.eg" class="textContact">info.bue.edu.eg</a>
+                    <a target="_blank" href="tel:+2019283" class="textContact">+20 19283</a>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">
+                        El Sherouk City, Suez Desert Road,<br>Cairo 11837 - P.O. Box 43</a>
+                </div>
+            </div>
+
+            <div class="links">
+                <h1>Quick Links</h1>
+
+                <ul>
+                    <li><img src="../Images/arrow_icon.png" alt="home"><a href="home.html">Home</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="SRS"><a href="SRS.html">SRS</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="Tasks"><a href="cengage.html">Tasks</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="Exams"><a href="examsHistory.html">Exams</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="Grades"><a href="Grades.html">Grades</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyRight">
+            <img src="../Images/newLogo.png" alt="home">
+            <p>Copyright &copy; 2020 BUE , All rights reserved. Last Updated January 2022.</p>
+        </div>
+        <img src="../Images/buePic.png" alt="BUE" class="footerPic">
+    </footer>
+    <script src="Sscript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BUE e-learning system">
+    <meta name="keywords" content="BUE, e-learning system, bue, BUE system">
+    <meta name="author" content="Abdelrhman Elshenawy">
+    <title>Exams</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../footerStyle.css">
+    <style>
+        :root {
+            --whiteBlue: #4A6572;
+            --darkBlue: #232F34;
+            --midBlue: #384959;
+            --skyBlue: #D5E1E8;
+            --whiteOrange: #FFC56E;
+            --darkOrange: #F9AA33;
+        }
+
+        main {
+            width: 100%;
+            height: 800px;
+            background-color: var(--skyBlue);
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            background: #f1f1f1f1;
+            margin-top: 10em;
+        }
+
+        /* Slides */
+        .mySlides {
+            display: none;
+            padding: 80px;
+            text-align: center;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        /* The dot/bullet/indicator container */
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        /* Add a background color to the active dot/circle */
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Add an italic font style to all quotes */
+        q {
+            font-style: italic;
+        }
+
+        /* Add a blue color to the author */
+        .author {
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img id="logo" src="../Images/newLogo.png" alt="Logo" onclick="location.href='home.html'">
+        <div class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="SRS.html" id="srs">SRS</a></li>
+                <li><a href="cengage.html">Tasks</a></li>
+                <li><a href="examsHistory.html"><span class="onClicked">Exams</span></a></li>
+                <li><a href="Grades.html">Grades</a></li>
+            </ul>
+        </div>
+        <div class="personalCard" onclick="displayCard()">
+            <p>Abdelrhman</p>
+            <img src="../Images/avatar.jpg" alt="avatare">
+        </div>
+        <div class="clickedCard display" id="clcCard">
+            <div class="header">
+                <p>The British University in Egypt</p>
+                <div class="accName" onclick="location.href='../Login forms/index.html'">
+                    <p>Sign out</p>
+                </div>
+            </div>
+            <div class="body">
+                <img src="../Images/avatar.jpg" alt="avatar">
+                <div class="info">
+                    <p>Abdelrhman Elshenawy</p>
+                    <p>225328</p>
+                    <p>abd.elrhman225328@bue.edu.eg</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ###############    Start coding here    ############## -->
+
+
+
+
+
+
+
+
+    <main>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <p>Which among the following is measured using a Vernier Caliper?</p>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Dimensions">
+                <label for="vehicle1"> Dimensions</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Time">
+                <label for="vehicle2"> Time</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Sound">
+                <label for="vehicle3"> Sound</label><br>
+                <input type="submit" value="Submit">
+
+            </div>
+
+            <div class="mySlides">
+                <p>“Svedberg Unit” is a unit of _________?</p>
+                <input type="checkbox" id="vehicle21" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Concentration</label><br>
+                <input type="checkbox" id="vehicle22" name="vehicle2" value="Car">
+                <label for="vehicle2"> Size</label><br>
+                <input type="checkbox" id="vehicle23" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Density</label><br>
+                <input type="submit" value="Submit">
+            </div>
+
+            <div class="mySlides">
+                <p>Consider the following regarding the differences between ‘holography’ and ‘photography’:
+                    When a photograph is cut in half, each piece shows half of the scene.
+                    1. When a hologram is cut in half, the whole scene can still be seen in each piece.
+                    2. A lens is required in photography to record the image, whereas in holography, the light from
+                    the object is scattered directly onto the recording medium.</p>
+                <input type="checkbox" id="vehicle31" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Only 1
+                </label><br>
+                <input type="checkbox" id="vehicle32" name="vehicle2" value="Car">
+                <label for="vehicle2"> Only 2</label><br>
+                <input type="checkbox" id="vehicle33" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Both 1 and 2</label><br>
+                <input type="submit" value="Submit">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(1)"></a>
+
+        </div>
+
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+
+
+    </main>
+
+
+    <footer>
+        <div class="info">
+            <div class="support">
+                <h1>Technical Support:</h1>
+                <a href="mailto:seif.yasser@bue.edu.eg">seif.yasser@bue.edu.eg</a>
+                <a href="mailto:islam.yasser@bue.edu.eg">islam.yasser@bue.edu.eg</a>
+                <div class="socialIcons">
+                    <a href="https://www.bue.edu.eg/" target="_blank"><img src="../Images/website_icon.png"
+                            alt="website"></a>
+                    <a href="https://www.facebook.com/thebritishuniversityegypt" target="_blank"><img
+                            src="../Images/facebook_icon.png" alt="Facebbok"></a>
+                    <a href="https://twitter.com/bue_university" target="_blank"><img src="../Images/twitter_icon.png"
+                            alt="Twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCqvAvU8X3_3cmRZexwPhucg" target="_blank"><img
+                            src="../Images/youtube_icon.png" alt="YouTube"></a>
+                    <a href="https://www.instagram.com/thebritishuniversityinegypt/" target="_blank"><img
+                            src="../Images/instagram_icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="contact">
+                <h1>Contact</h1>
+                <div class="contactIcons">
+                    <a target="_blank" href="mailto:info.bue.edu.eg"><img src="../Images/email.png" alt="email"></a>
+                    <a target="_blank" href="tel:+2019283"><img src="../Images/call.png" alt="call"></a>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">
+                        <img src="../Images/location.png" alt="email"></a>
+                </div>
+                <div class="contactText">
+                    <a target="_blank" href="mailto:info.bue.edu.eg" class="textContact">info.bue.edu.eg</a>
+                    <a target="_blank" href="tel:+2019283" class="textContact">+20 19283</a>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">
+                        El Sherouk City, Suez Desert Road,<br>Cairo 11837 - P.O. Box 43</a>
+                </div>
+            </div>
+
+            <div class="links">
+                <h1>Quick Links</h1>
+
+                <ul>
+                    <li><img src="../Images/arrow_icon.png" alt="home"><a href="home.html">Home</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="SRS"><a href="SRS.html">SRS</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="Tasks"><a href="cengage.html">Tasks</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="Exams"><a href="examsHistory.html">Exams</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="Grades"><a href="Grades.html">Grades</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyRight">
+            <img src="../Images/newLogo.png" alt="home">
+            <p>Copyright &copy; 2020 BUE , All rights reserved. Last Updated January 2022.</p>
+        </div>
+        <img src="../Images/buePic.png" alt="BUE" class="footerPic">
+    </footer>
+    <script src="Sscript.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+</body>
+
+</html>

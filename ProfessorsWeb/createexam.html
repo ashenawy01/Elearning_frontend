@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleP.css">
+  <link rel="stylesheet" href="../footerStyle.css">
+  <title> Craete</title>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <style> 
+  main {
+     height: 800px;
+     margin-left: 20%;
+}
+   main .topbar {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 65px;
+  width: 100%;
+  background-color: #384959;
+  justify-content:space-around;
+  
+}
+
+main .topbar a{
+  font-size: 27px;
+  font-family: sans-serif;
+  color: #f2f2f2;
+  text-decoration: none;
+  text-align: right;
+  padding: 14px 16px;
+  float: left;
+  margin-right: 3%;
+}
+main .topbar a:hover {
+  background-color: #f2f2f2;
+  color: black;
+}
+main .topbar a.active {
+  background-color: #f2f2f2;
+  color: black;}
+  .bar2 {
+    padding: 10px 15px;
+      background-color: #f2f2f2;
+      text-align: end;
+  }
+  .des {
+      color: rgb(142, 143, 145);
+      display: inline-block;
+  }
+  .make {
+      margin-top: 40px;
+      width: 900px;
+      height: 300px;
+      margin-left: 60px;
+      background-color: #f1f1f1;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border: 1.3px solid #384959 ;
+      flex-wrap: wrap;
+      
+  }
+   main .page { 
+      background-color: #bbd2de;
+      border : 1.6px #c7c2c2 solid;
+      text-align: start;
+      padding: 15px 10px;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;}
+
+      .dropbtn {
+  background-color: #F9AA33;
+  color: rgb(24, 24, 27);
+  padding: 16px;
+  font-size: 18px;
+  border: #F9AA33;
+  border-radius: 3px;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 170px 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 13px 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color:#FFC56E;}
+
+
+.print1 button {
+    background-color: #c2c1c1c7;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+.color {
+color: #f1f1f1;
+display: inline;
+}
+
+.cancelbtn1 {
+  
+  padding: 10px 18px;
+  background-color: #a0b6d9;
+  width: 15%; 
+
+  }
+  .save1{
+  background-color: #e26f2c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.ques1 {
+  display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    border: none;
+}
+.droppage {
+  background-color: #18c25f;
+  color: rgb(48, 48, 52);
+  padding: 16px;
+  font-size: 18px;
+  border: #18c25f;
+  border-radius: 3px;
+  margin-top: 35px;
+  margin-left: 430px;
+}
+#printt button{
+  font-size: larger;
+  margin: 100px 0 0 800px;
+  border: 2px solid #96abcc  ;
+  border-radius: 3px ;
+  padding: 10px 9px;
+}
+.EDITbutton{
+  color: #d4d1d1;
+  display: inline;
+}
+#photos {
+  display: inline;
+  
+  margin-left: 700px;
+  padding: 40px 0 30px 0;
+  
+}
+#enterQuestion{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 200px;
+}
+#correct1 , #correct2 , #correct3{
+  width: 49.7%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.img3 {
+  width: 27px; height: 27px;
+}
+</style>
+</head>
+
+<body>
+   <!--Sidebar--> 
+  <div class="wrapper">
+    <div class="sidebar">
+      
+      <!--Professor Profile--> 
+      <div class="profile"><img src="../Images/femaleAvatar.png" class="profile" alt="Your Profile">
+      <h1>Nivine</h1> </div>
+   
+      <!--Buttons list--> 
+      <ul class="MainMenu">
+        <li>
+          <a href="home.html">
+           <i class='bx bxs-home'></i> &#9; Home
+           </a>
+         </li>
+       <li>
+   
+         <a href="examsList.html" >
+           <i class='bx bxs-file-plus'></i> &#9; Exam list
+         </a>
+       </li>
+       
+        <li>
+          <a href="members.html">
+           <i class='bx bx-user'></i> &#9; Members
+           </a>
+         </li>
+       </ul>
+     </div>
+    </div>
+   
+    <!--Topbar--> 
+    <div class="topbar">
+      <!--Logo--> 
+   <div class="logo">
+     <a href="home.html">
+     <img src="../Images/newLogo.png" class="logo" alt="Logo"></a>
+    </div>
+      <!--Search bar--> 
+      <div class="search-box">
+        <input class="search-txt" type="text" placeholder="Type to search">
+        <button><i class='bx bx-search'></i></button>
+      </div>
+      
+      <!--Logout, Add course--> 
+     
+     <div class="logout"><button onclick="location.href='../Login forms/index.html'">LogOut</button></div>
+     <div class="logout"><button onclick="document.getElementById('id01').style.display='block'">New course</button></div>
+   
+     <div id="id01" class="modal">
+  
+      <form class="modal-content animate">
+        
+          <span onclick="document.getElementById('id01').style.display='none'"  ></span>
+          
+    
+        <div class="CourseContainer">
+        <h1> Enter your course details below </h1>
+          <label><b>Course name:</b></label>
+          <input id="Cinfo" placeholder="Enter course name..." name="Cname" required>
+    
+          <label><b>Course description:</b></label>
+          <input id="Cdescription" placeholder="Enter course description..." name="Cdescription" required>
+          
+          <label><b>Contact information:</b></label>
+          <br>
+          <input id="contact" placeholder="Enter name..." name="Cinformation" required>
+          <input id="contact1" placeholder="Enter Email..." name="Cinformation" required>
+          <br>
+          <input id="contact2" placeholder="Enter name..." name="Cinformation" >
+          <input id="contact3" placeholder="Enter Email..." name="Cinformation" >
+          <br>
+          <input id="contact4" placeholder="Enter name..." name="Cinformation" >
+          <input id="contact5" placeholder="Enter Email..." name="Cinformation" >
+            
+          <button class="save">Save</button>
+        </div>
+    
+        <div class="CourseContainer" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+      </form>
+    </div>
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+   </div>
+
+
+
+  <main>
+    
+    
+        <div class="topbar">
+         <a class="active" href="createExam.html">Create</a>
+         <a href="configure.html">Configure</a>
+         <a href="analyze.html">Analyze</a>
+        </div>
+        <div class="bar2"> Quiz: 
+            <div class="des"> Quiz 1</div> &nbsp; &nbsp; 
+              Status: <div class="des">In Design</div>
+        </div>
+        
+        <div id="printt" > 
+        <button onclick="window.print()"><i class='bx bx-printer' > Print </i> </button>  </div>
+    <div class="make"> 
+        <div class="page">
+            Page: 1 <div id="photos"> <img class ="img3" src="../Images/icons8-edit-64.png" alt="edit" >
+            <img class="img3" src="../Images/icons8-resize-vertical-24.png" alt="move" > 
+            <img class= "img3" src="../Images/icons8-cancel-64.png" alt="delete" > </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Add item</button>
+        
+            
+            <div class="dropdown-content">
+              <button onclick="document.getElementById('id0').style.display='block'" class="ques1" >
+               Question</button></div>
+
+            <div id="id0" class="modal">
+              
+              <form class="modal-content animate">
+                
+                  <span onclick="document.getElementById('id0').style.display='none'"  ></span>
+                  
+            
+                <div class="CourseContainer">
+                <h1> New Question </h1>
+
+                <div class="color"> Question Type :</div>
+
+                  <select size="1" name="type" id="type"> 
+                  <option> Select Your type </option>
+                   <option value="Multi">Multiple choice</option>
+                   <option value="blank">Fill in blanks</option>
+                    <option value="Matching Text">Matching Text</option> 
+                    <option value="Pic">Picture Choice</option>
+                </select> 
+
+               &nbsp; 
+
+                 <div class="color">Points:</div> <input type="number"
+                  name="myChoice" id="myChoice" min="0" max="100">
+
+                  <br>
+                  <br>
+            
+                  <b>Question :</b> <input type="text" placeholder="Enter Question..." name="question" id="enterQuestion" required> 
+
+                  <input type="checkbox" name="Required" id="Req" value="Required" > <div class="EDITbutton"> Required </div> &nbsp; 
+                  <input type="checkbox" name="FB" id="FB" value="FB"> <div class="EDITbutton">Show question feedback </div>
+                   <br>  <br>
+                  <b> Options:</b>
+                  <br> 
+                  <input type="text" placeholder="Enter Option..." name="Cinformation" id="correct1" required>
+                  <input type="checkbox" name="correct" id="correct11" value="correct"> <div class="EDITbutton"> Correct</div> 
+                   <br> <br>
+                  <input type="text" placeholder="Enter Option..." name="Cinformation" id= "correct2"  required>
+                  <input type="checkbox" name="correct" id="correct22" value="correct"> <div class="EDITbutton"> Correct</div>
+                  <br> <br>
+                  <input type="text" placeholder="Enter Option..." name="Cinformation" id= "correct3"  required>
+                  <input type="checkbox" name="correct" id="correct33" value="correct"> <div class="EDITbutton"> Correct</div> 
+                   <br> <br>
+                  <input type="checkbox" name="Random" id="random" value="Random" > <div class="EDITbutton">Randomize Options </div> &nbsp;
+                  <input type="checkbox" name="set" id="set" value="set"><div class="EDITbutton"> Set option points </div>  
+                  <br> <br>
+                  <button class="ADD"> Add option </button> 
+                  
+                  <button class="save1">Save</button>
+                </div>
+            
+                <div class="CourseContainer" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id0').style.display='none'" class="cancelbtn1">Cancel</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    
+    <button class="droppage" onclick="document.getElementById('id0').style.display='block'" class="ques1">  Add Page</button>
+    
+  </main>
+
+
+
+
+
+
+  <footer>
+    <div class="info">
+      <div class="support">
+        <h1>Technical Support:</h1>
+        <a href="mailto:seif.yasser@bue.edu.eg">seif.yasser@bue.edu.eg</a>
+        <a href="mailto:islam.yasser@bue.edu.eg">islam.yasser@bue.edu.eg</a>
+        <div class="socialIcons">
+          <a href="https://www.bue.edu.eg/"><img src="../Images/website_icon.png" alt="website"></a>
+          <a href="https://www.facebook.com/thebritishuniversityegypt"><img src="../Images/facebook_icon.png"
+              alt="Facebbok"></a>
+          <a href="https://twitter.com/bue_university"><img src="../Images/twitter_icon.png" alt="Twitter"></a>
+          <a href="https://www.youtube.com/channel/UCqvAvU8X3_3cmRZexwPhucg"><img src="../Images/youtube_icon.png"
+              alt="YouTube"></a>
+          <a href="https://www.instagram.com/thebritishuniversityinegypt/"><img src="../Images/instagram_icon.png"
+              alt="Instagram"></a>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h1>Contact</h1>
+        <div class="contactIcons">
+            <a href="mailto:info.bue.edu.eg"><img src="../Images/email.png" alt="email"></a>
+            <a href="tel:+2019283"><img src="../Images/call.png" alt="call"></a>
+            <a
+                href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">
+                <img src="../Images/location.png" alt="email"></a>
+        </div>
+        <div class="contactText">
+            <a href="mailto:info.bue.edu.eg" class="textContact">info.bue.edu.eg</a>
+            <a href="tel:+2019283" class="textContact">+20 19283</a>
+            <a
+                href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">
+                El Sherouk City, Suez Desert Road,<br>Cairo 11837 - P.O. Box 43</a>
+        </div>
+    </div>
+
+      <div class="links">
+        <h1>Quick Links</h1>
+
+        <ul>
+          <li><img src="../Images/arrow_icon.png" alt="home"><a href="home.html">Home</a></li>
+          <li><img src="../Images/arrow_icon.png" alt="Exam list"><a href="examsList.html">Exam list</a></li>
+          <li><img src="../Images/arrow_icon.png" alt="Members"><a href="members.html">Members</a></li>
+      </ul>
+      </div>
+    </div>
+    <div class="copyRight">
+      <img src="../Images/newLogo.png" alt="home">
+      <p>Copyright &copy; 2020 BUE , All rights reserved. Last Updated January 2022.</p>
+    </div>
+    <img src="../Images/buePic.png" alt="BUE" class="footerPic">
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BUE e-learning system">
+    <meta name="keywords" content="BUE, e-learning system, bue, BUE system">
+    <meta name="author" content="Abdelrhman Elshenawy">
+    <title>Module</title>
+    <link rel="stylesheet" href="../courseStyle.css">
+    <link rel="stylesheet" href="../footerStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image" onclick="location.href='../StudentsWeb/home.html'">
+                    <i class='bx bxs-left-arrow icon'></i>
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Wep </span>
+                    <span class="profession">Programming</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul>
+                    <li class="search-box">
+                        <i class='bx bx-search icon'></i>
+                        <input type="text" placeholder="Search...">
+                    </li>
+                </ul>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="courseContact.html">
+                            <i class='bx bxs-contact icon'></i>
+                            <span class="text nav-text">Contact Info</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="courseDes.html">
+                            <i class='bx bxs-notepad icon'></i>
+                            <span class="text nav-text">Description</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="courseAnn.html">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Announcement</span>
+
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#" onclick="dropMenu()">
+                            <i class='bx bx-table icon'></i>
+                            <span class="text nav-text">Weeks</span>
+                            <i class='bx bx-chevron-up icon' id="dropArrow"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="weeksList show" id="weeksList">
+                    <li><a href="courseWeek.html">Week1</a></li>
+                    <li><a href="courseWeek.html">Week2</a></li>
+                    <li><a href="courseWeek.html">Week3</a></li>
+                    <li><a href="courseWeek.html">Week4</a></li>
+                    <li><a href="courseWeek.html">Week5</a></li>
+                    <li><a href="courseWeek.html">Week6</a></li>
+                    <li><a href="courseWeek.html">Week7</a></li>
+                    <li><a href="courseWeek.html">Week8</a></li>
+                    <li><a href="courseWeek.html">Week9</a></li>
+                    <li><a href="courseWeek.html">Week10</a></li>
+                    <li><a href="courseWeek.html">Week11</a></li>
+                    <li><a href="courseWeek.html">Week12</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="homeNav">
+            <img id="logo" src="../Images/newLogo.png" onclick="location.href='home.html'" alt="Home">
+            <div class="Navmenu">
+                <ul>
+                    <li><a href="home.html"><span class="onClicked">Home</span></a></li>
+                    <li><a href="SRS.html">SRS</a></li>
+                    <li><a href="cengage.html">Tasks</a></li>
+                    <li><a href="examsHistory.html">Exams</a></li>
+                    <li><a href="Grades.html">Grades</a></li>
+                </ul>
+            </div>
+            <div class="personalCard" onclick="displayCard()">
+                <img src="../Images/avatar.jpg" alt="avatare">
+                <h1>Abdelrhman</h1>
+            </div>
+            <div class="clickedCard display" id="clcCard">
+                <div class="header">
+                    <p>The British University in Egypt</p>
+                    <div class="accName" onclick="location.href='../Login forms/index.html'">
+                        <p>Sign out</p>
+                    </div>
+                </div>
+                <div class="body">
+                    <img src="../Images/avatar.jpg" alt="avatar">
+                    <div class="info">
+                        <p>Abdelrhman Elshenawy</p>
+                        <p>225328</p>
+                        <p>abd.elrhman225328@bue.edu.eg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="displayContent">
+                <div class="displayNav">
+                    <span class="text nav-text">Wep programming</span>
+                </div>
+                <div class="courseContent">
+                    <div class="ImageCourses">
+                        <img src="../Images/buePic.png" alt="BUE logo">
+                    </div>
+                    <div class="cards">
+                        <div class="weekCard" onclick="location.href='courseWeek.html'">
+                            <div class="cardContent">
+                                <h1>01</h1>
+                                <h4>Week</h4>
+                                <progress value="0" max="100"> 0% </progress>
+                                <h6>0%</h6>
+                            </div>
+                        </div>
+                        <div class="weekCard" onclick="location.href='courseWeek.html'">
+                            <div class="cardContent">
+                                <h1>02</h1>
+                                <h4>Week</h4>
+                                <progress value="0" max="100"> 0% </progress>
+                                <h6>0%</h6>
+                            </div>
+                        </div>
+                        <div class="weekCard" onclick="location.href='courseWeek.html'">
+                            <div class="cardContent">
+                                <h1>03</h1>
+                                <h4>Week</h4>
+                                <progress value="0" max="100"> 0% </progress>
+                                <h6>0%</h6>
+                            </div>
+                        </div>
+                        <div class="weekCard" onclick="location.href='courseWeek.html'">
+                            <div class="cardContent">
+                                <h1>04</h1>
+                                <h4>Week</h4>
+                                <progress value="0" max="100"> 0% </progress>
+                                <h6>0%</h6>
+                            </div>
+                        </div>
+                        <div class="weekCard" onclick="location.href='courseWeek.html'">
+                            <div class="cardContent">
+                                <h1>05</h1>
+                                <h4>Week</h4>
+                                <progress value="0" max="100"> 0% </progress>
+                                <h6>0%</h6>
+                            </div>
+                        </div>
+                        <div class="weekCard" onclick="location.href='courseWeek.html'">
+                            <div class="cardContent">
+                                <h1>06</h1>
+                                <h4>Week</h4>
+                                <progress value="0" max="100"> 0% </progress>
+                                <h6>0%</h6>
+                            </div>
+                        </div>
+                        <div class="weekCard" onclick="location.href='courseWeek.html'">
+                            <div class="cardContent">
+                                <h1>07</h1>
+                                <h4>Week</h4>
+                                <progress value="0" max="100"> 0% </progress>
+                                <h6>0%</h6>
+                            </div>
+                        </div>
+                        <div class="weekCard" onclick="location.href='courseWeek.html'">
+                            <div class="cardContent">
+                                <h1>08</h1>
+                                <h4>Week</h4>
+                                <progress value="0" max="100"> 0% </progress>
+                                <h6>0%</h6>
+                            </div>
+                        </div>
+                        <div class="weekCard" onclick="location.href='courseWeek.html'">
+                            <div class="cardContent">
+                                <h1>05</h1>
+                                <h4>Week</h4>
+                                <progress value="0" max="100"> 0% </progress>
+                                <h6>0%</h6>
+                            </div>
+                        </div>
+                        <div class="weekCard" onclick="location.href='courseWeek.html'">
+                            <div class="cardContent">
+                                <h1>06</h1>
+                                <h4>Week</h4>
+                                <progress value="0" max="100"> 0% </progress>
+                                <h6>0%</h6>
+                            </div>
+                        </div>
+                        <div class="weekCard" onclick="location.href='courseWeek.html'">
+                            <div class="cardContent">
+                                <h1>07</h1>
+                                <h4>Week</h4>
+                                <progress value="0" max="100"> 0% </progress>
+                                <h6>0%</h6>
+                            </div>
+                        </div>
+                        <div class="weekCard" onclick="location.href='courseWeek.html'">
+                            <div class="cardContent">
+                                <h1>08</h1>
+                                <h4>Week</h4>
+                                <progress value="0" max="100"> 0% </progress>
+                                <h6>0%</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="info">
+                <div class="support">
+                    <h1>Technical Support:</h1>
+                    <a href="mailto:seif.yasser@bue.edu.eg">seif.yasser@bue.edu.eg</a>
+                    <a href="mailto:islam.yasser@bue.edu.eg">islam.yasser@bue.edu.eg</a>
+                    <div class="socialIcons">
+                        <a href="https://www.bue.edu.eg/"><img src="../Images/website_icon.png" alt="website"></a>
+                        <a href="https://www.facebook.com/thebritishuniversityegypt"><img
+                                src="../Images/facebook_icon.png" alt="Facebbok"></a>
+                        <a href="https://twitter.com/bue_university"><img src="../Images/twitter_icon.png"
+                                alt="Twitter"></a>
+                        <a href="https://www.youtube.com/channel/UCqvAvU8X3_3cmRZexwPhucg"><img
+                                src="../Images/youtube_icon.png" alt="YouTube"></a>
+                        <a href="https://www.instagram.com/thebritishuniversityinegypt/"><img
+                                src="../Images/instagram_icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <h1>Contact</h1>
+                    <div class="contactIcons">
+                        <a href="mailto:info.bue.edu.eg"><img src="../Images/email.png" alt="email"></a>
+                        <a href="tel:+2019283"><img src="../Images/call.png" alt="call"></a>
+                        <a
+                            href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">
+                            <img src="../Images/location.png" alt="email"></a>
+                    </div>
+                    <div class="contactText">
+                        <a href="mailto:info.bue.edu.eg" class="textContact">info.bue.edu.eg</a>
+                        <a href="tel:+2019283" class="textContact">+20 19283</a>
+                        <a
+                            href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">
+                            El Sherouk City, Suez Desert Road,<br>Cairo 11837 - P.O. Box 43</a>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <h1>Quick Links</h1>
+
+                    <ul>
+                        <li><img src="../Images/arrow_icon.png" alt="home"><a href="home.html">Home</a></li>
+                        <li><img src="../Images/arrow_icon.png" alt="SRS"><a href="SRS.html">SRS</a></li>
+                        <li><img src="../Images/arrow_icon.png" alt="Tasks"><a href="cengage.html">Tasks</a></li>
+                        <li><img src="../Images/arrow_icon.png" alt="Exams"><a href="examsHistory.html">Exams</a></li>
+                        <li><img src="../Images/arrow_icon.png" alt="Grades"><a href="Grades.html">Grades</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyRight">
+                <img src="../Images/newLogo.png" alt="home">
+                <p>Copyright &copy; 2020 BUE , All rights reserved. Last Updated January 2022.</p>
+            </div>
+            <img src="../Images/buePic.png" alt="BUE" class="footerPic">
+        </footer>
+    </section>
+    <script src="Sscript.js"></script>
+    <script src="../moduleScript.js"></script>
+</body>
+
+</html>

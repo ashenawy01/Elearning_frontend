@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Sign in
+    </title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="BUE, E-learning system, Online exams, bue">
+    <meta name="description" content="BUE E-learning system">
+    <meta name="auther" content="Abdelrhman A. Elshenawy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="startStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .SignInForm h2 {
+            text-align: center;
+            color: var(--darkBlue);
+            padding: 0 0 20px 0;
+            border-bottom: 1px solid var(--darkBlue);
+        }
+
+        .text_field input {
+            width: 100%;
+            padding: 0 5px;
+            height: 40px;
+            font-size: 16px;
+            border: none;
+            background: none;
+            outline: none;
+        }
+
+        .text_field span::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: var(--darkBlue);
+            transition: .5s;
+        }
+
+        .text_field input:focus~label,
+        .text_field input:valid~label {
+            top: -5px;
+            color: var(--darkBlue);
+        }
+
+        .text_field input:focus~span::before,
+        .text_field input:valid~span::before {
+            width: 100%;
+        }
+
+        .pass {
+            margin: -5px 0 20px 5px;
+            color: #a6a6a6;
+            cursor: pointer;
+        }
+
+        .pass a {
+            margin: -5px 0 20px 5px;
+            color: #a6a6a6;
+            cursor: pointer;
+        }
+
+        .pass:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            width: 100%;
+            height: 50px;
+            border: 1px solid;
+            background: var(--darkBlue);
+            border-radius: 25px;
+            font-size: 18px;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+        }
+
+        button:hover {
+            background-color: var(--darkOrange);
+            transition: .5s;
+        }
+
+        .signup_link {
+            margin: 30px 0;
+            text-align: center;
+            font-size: 16px;
+            color: #666666;
+        }
+
+        .signup_link a {
+            color: var(--darkBlue);
+            text-decoration: none;
+        }
+
+        .signup_link a:hover {
+            text-decoration: underline;
+        }
+
+        .pastLogs {
+            opacity: 92%;
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            width: 40%;
+            height: 68%;
+            background-color: var(--whiteBlue);
+            border-radius: 10px;
+        }
+
+        .logoHead {
+            width: 100%;
+            height: auto;
+            background-color: var(--darkBlue);
+
+        }
+
+        #BUElogo {
+            width: 22vw;
+            height: 100px;
+            margin: 1% 26%;
+
+        }
+
+        .pastLogs h1 {
+            color: white;
+            margin: 4% 6% 2%;
+        }
+
+        .pastLogs p {
+            color: whitesmoke;
+            margin: 2% 6% 4%;
+        }
+
+        .accounts {
+            border-top: 1px solid var(--skyBlue);
+            padding-top: 15px;
+            margin-top: 10%;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .existedAccount {
+            margin: 0px 9px;
+            width: 95px;
+            height: 110px;
+            background-color: whitesmoke;
+            overflow: hidden;
+            border: 1px solid var(--darkOrange);
+            border-radius: .3em;
+        }
+
+        .existedAccount a img {
+            width: 100%;
+            height: 77%;
+        }
+
+        .existedAccount h2 {
+            font-size: 15px;
+            text-align: center;
+            margin-top: -22px;
+            background-color: white;
+            height: 25px;
+        }
+
+        #addAccount {
+            border-bottom: 1px solid var(--darkBlue);
+        }
+
+        .X {
+            transform: translate(1px, -86px);
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+        #loginCard {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        #loginCard .SignInForm {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+        }
+
+        i {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: red;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        #addNewBtn {
+            margin: 0px auto 15px 15%;
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="pastLogs">
+            <div class="logoHead">
+                <img src="../Images/newLogo.png" alt="BUE Logo" id="BUElogo">
+            </div>
+            <h1>Recent Logins</h1>
+            <p>Click on your picture or add a new account</p>
+            <div class="accounts">
+                <div class="existedAccount studAcc" id="studAcc">
+                    <a href="../StudentsWeb/home.html"><img src="../Images/avatar.jpg" alt="picture"></a>
+                    <img src="../Images/exit.png" alt="delete" class="X" onclick="popElement('studAcc')">
+                    <h2>Abdelrhman</h2>
+                </div>
+                <div class="existedAccount profAcc" id="profAcc">
+                    <a href="../ProfessorsWeb/home.html"><img src="../Images/femaleAvatar.png" alt="picture"></a>
+                    <img src="../Images/exit.png" alt="delete" class="X" onclick="popElement('profAcc')">
+                    <h2>Nivine</h2>
+                </div>
+                <div class="existedAccount">
+                    <a href="#" onclick="addLogin()"><img src="../Images/plus.png" alt="picture" id="addAccount"
+                            onclick="addLogin()"></a>
+                    <h2 style="margin-top: -3px;">Add account</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="SignInForm">
+
+            <h1>BUE E-learning System</h1>
+            <h2>Sign in</h2>
+            <form method="get">
+                <div class="text_field">
+                    <input type="text" name="username" id="username" required>
+                    <span></span>
+                    <label for="username">Username</label>
+                </div>
+                <div class="text_field">
+                    <input type="password" name="password" id="password" required>
+                    <span></span>
+                    <label for="password">Password</label>
+                </div>
+                <div class="account_kind">
+                    <input type="radio" name="accountType" value="professor" id="professor">
+                    <label for="professor">Professor</label>
+                    <br>
+                    <input type="radio" name="accountType" value="student" id="student">
+                    <label for="student">student</label>
+                </div>
+                <div class="pass"><a href="resetPass.html">Forgot Password ?</a></div>
+                <button onclick="isUser()">Login</button>
+                <div class="signup_link">
+                    Not a member ? <a href="signUp.html">Sign Up</a>
+                </div>
+            </form>
+        </div>
+        <div id="loginCard" class="display">
+            <div class="SignInForm">
+                <i class='bx bxs-x-circle' onclick="closeAddLogin()"></i>
+                <h1>BUE E-learning System</h1>
+                <h2>Sign in</h2>
+                <form method="get" id="myform">
+                    <div class="text_field">
+                        <input type="text" name="username" id="usernameN" required>
+                        <span></span>
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="text_field">
+                        <input type="password" name="password" id="passwordN" required>
+                        <span></span>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="account_kind">
+                        <input type="radio" name="accountType" value="professor" id="professorN">
+                        <label for="professorN">Professor</label>
+                        <br>
+                        <input type="radio" name="accountType" value="student" id="studentN">
+                        <label for="studentN">student</label>
+                    </div>
+                </form>
+                <button onclick="addNewUser()" id="addNewBtn">Add account</button>
+
+            </div>
+        </div>
+    </main>
+    <script src="login.js"></script>
+</body>
+
+</html>

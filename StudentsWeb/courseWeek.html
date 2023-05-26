@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BUE e-learning system">
+    <meta name="keywords" content="BUE, e-learning system, bue, BUE system">
+    <meta name="author" content="Abdelrhman Elshenawy">
+    <title>Module</title>
+    <link rel="stylesheet" href="../courseStyle.css">
+    <link rel="stylesheet" href="../footerStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        :root {
+            --whiteBlue: #4A6572;
+            --darkBlue: #232F34;
+            --midBlue: #384959;
+            --skyBlue: #D5E1E8;
+            --whiteOrange: #FFC56E;
+            --darkOrange: #F9AA33;
+        }
+
+        .courseDes {
+            padding: 2%;
+            overflow: auto;
+        }
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .txt-icon {
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+        }
+
+        .title .txt-icon i {
+            color: var(--midBlue);
+            font-size: 2.3vw;
+            margin-right: 1.3vw;
+        }
+
+        .title .txt-icon h1 {
+            color: var(--midBlue);
+            text-decoration: underline;
+            font-size: 2.5vw;
+        }
+
+        .description {
+            width: inherit;
+            margin-top: 2vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        #btn {
+            text-decoration: none;
+            background-color: var(--midBlue);
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: .1em;
+        }
+
+        #btn:hover {
+            color: var(--darkBlue);
+            background-color: var(--darkOrange);
+        }
+
+        .weekList {
+            width: 70%;
+
+        }
+
+        .weekList ul {
+            list-style-type: none;
+        }
+
+        .weekList ul li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .weekList ul li .link i,
+        .weekList ul li .link label {
+            text-decoration: none;
+            color: var(--darkBlue);
+            font-size: 2.3vw;
+            cursor: pointer;
+            margin: 0px 1vw;
+        }
+
+        .weekList ul li input[type=checkbox] {
+            transform: translateY(10px);
+        }
+
+        .weekList ul li .link label:hover {
+            text-decoration: underline;
+        }
+
+        iframe {
+            width: 560px;
+            height: 315px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image" onclick="location.href='../StudentsWeb/home.html'">
+                    <i class='bx bxs-left-arrow icon'></i>
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Wep </span>
+                    <span class="profession">Programming</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul>
+                    <li class="search-box">
+                        <i class='bx bx-search icon'></i>
+                        <input type="text" placeholder="Search...">
+                    </li>
+                </ul>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="courseContact.html">
+                            <i class='bx bxs-contact icon'></i>
+                            <span class="text nav-text">Contact Info</span>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a href="courseDes.html">
+                            <i class='bx bxs-notepad icon'></i>
+                            <span class="text nav-text">Description</span>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Announcement</span>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a href="#" onclick="dropMenu()" class="onSelect">
+                            <i class='bx bx-table icon'></i>
+                            <span class="text nav-text">Weeks</span>
+                            <i class='bx bx-chevron-up icon' id="dropArrow"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="weeksList show" id="weeksList">
+                    <li><a href="#" class="onSelect">Week1</a></li>
+                    <li><a href="">Week2</a></li>
+                    <li><a href="">Week3</a></li>
+                    <li><a href="">Week4</a></li>
+                    <li><a href="">Week5</a></li>
+                    <li><a href="">Week6</a></li>
+                    <li><a href="">Week7</a></li>
+                    <li><a href="">Week8</a></li>
+                    <li><a href="">Week9</a></li>
+                    <li><a href="">Week10</a></li>
+                    <li><a href="">Week11</a></li>
+                    <li><a href="">Week12</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="homeNav">
+            <img id="logo" src="../Images/newLogo.png" onclick="location.href='home.html'" alt="logo">
+            <div class="Navmenu">
+                <ul>
+                    <li><a href="home.html"><span class="onClicked">Home</span></a></li>
+                    <li><a href="SRS.html" id="srs">SRS</a></li>
+                    <li><a href="cengage.html">Tasks</a></li>
+                    <li><a href="examsHistory.html">Exams</a></li>
+                    <li><a href="Grades.html">Grades</a></li>
+                </ul>
+            </div>
+            <div class="personalCard" onclick="displayCard()">
+                <img src="../Images/avatar.jpg" alt="avatare">
+                <h1>Abdelrhman</h1>
+            </div>
+            <div class="clickedCard display" id="clcCard">
+                <div class="header">
+                    <p>The British University in Egypt</p>
+                    <div class="accName" onclick="location.href='../Login forms/index.html'">
+                        <p>Sign out</p>
+                    </div>
+                </div>
+                <div class="body">
+                    <img src="../Images/avatar.jpg" alt="avatar">
+                    <div class="info">
+                        <p>Abdelrhman Elshenawy</p>
+                        <p>225328</p>
+                        <p>abd.elrhman225328@bue.edu.eg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="displayContent">
+                <div class="displayNav">
+                    <span class="text nav-text">Wep programming</span>
+                </div>
+                <div class="courseDes">
+                    <div class="title">
+                        <div class="txt-icon">
+                            <i class='bx bxs-graduation'></i>
+                            <h1>Week 1</h1>
+                        </div>
+                        <a href="files/week1.7z" download id="btn" target="_blank">Download All</a>
+                    </div>
+                    <div class="description">
+                        <iframe src="https://www.youtube.com/embed/Agl0r6IjcPw" title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="weekList">
+                            <ul>
+                                <li>
+                                    <div class="link"><i class='bx bx-link-alt'></i><label for="done1"
+                                            onclick="window.open('files/Lab1-Orientation(1).pptx')">Lab 1 -
+                                            Orientation</label></div>
+                                    <input type="checkbox" name="done1" id="done1">
+                                </li>
+                                <li>
+                                    <div class="link"><i class='bx bx-link-alt'></i><label for="done2"
+                                            onclick="window.open('files/Lecture1-WebDesignBasics.pdf')">Lecture
+                                            1</label></div>
+                                    <input type="checkbox" name="done2" id="done2">
+                                </li>
+                                <li>
+                                    <div class="link"><i class='bx bx-link-alt'></i><label for="done3"
+                                            onclick="window.open('files/Chapter1ReviewQuestions(WebProgramming).pdf')">Case
+                                            study 1</label></div>
+                                    <input type="checkbox" name="done3" id="done3">
+                                </li>
+                                <li>
+                                    <div class="link"><i class='bx bx-link-alt'></i><label for="done4"
+                                            onclick="window.open('files/ReviewQuestionsAnswers.pdf')">Case study 1
+                                            answers</label></div>
+                                    <input type="checkbox" name="done4" id="done4">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="info">
+                <div class="support">
+                    <h1>Technical Support:</h1>
+                    <a href="mailto:seif.yasser@bue.edu.eg">seif.yasser@bue.edu.eg</a>
+                    <a href="mailto:islam.yasser@bue.edu.eg">islam.yasser@bue.edu.eg</a>
+                    <div class="socialIcons">
+                        <a href="https://www.bue.edu.eg/"><img src="../Images/website_icon.png" alt="website"></a>
+                        <a href="https://www.facebook.com/thebritishuniversityegypt"><img
+                                src="../Images/facebook_icon.png" alt="Facebbok"></a>
+                        <a href="https://twitter.com/bue_university"><img src="../Images/twitter_icon.png"
+                                alt="Twitter"></a>
+                        <a href="https://www.youtube.com/channel/UCqvAvU8X3_3cmRZexwPhucg"><img
+                                src="../Images/youtube_icon.png" alt="YouTube"></a>
+                        <a href="https://www.instagram.com/thebritishuniversityinegypt/"><img
+                                src="../Images/instagram_icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <h1>Contact</h1>
+                    <div class="contactIcons">
+                        <a href="mailto:info.bue.edu.eg"><img src="../Images/email.png" alt="email"></a>
+                        <a href="tel:+2019283"><img src="../Images/call.png" alt="call"></a>
+                        <a
+                            href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">
+                            <img src="../Images/location.png" alt="email"></a>
+                    </div>
+                    <div class="contactText">
+                        <a href="mailto:info.bue.edu.eg" class="textContact">info.bue.edu.eg</a>
+                        <a href="tel:+2019283" class="textContact">+20 19283</a>
+                        <a
+                            href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">
+                            El Sherouk City, Suez Desert Road,<br>Cairo 11837 - P.O. Box 43</a>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <h1>Quick Links</h1>
+
+                    <ul>
+                        <li><img src="../Images/arrow_icon.png" alt="home"><a href="home.html">Home</a></li>
+                        <li><img src="../Images/arrow_icon.png" alt="SRS"><a href="SRS.html">SRS</a></li>
+                        <li><img src="../Images/arrow_icon.png" alt="Tasks"><a href="cengage.html">Tasks</a></li>
+                        <li><img src="../Images/arrow_icon.png" alt="Exams"><a href="examsHistory.html">Exams</a></li>
+                        <li><img src="../Images/arrow_icon.png" alt="Grades"><a href="Grades.html">Grades</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyRight">
+                <img src="../Images/newLogo.png" alt="home">
+                <p>Copyright &copy; 2020 BUE , All rights reserved. Last Updated January 2022.</p>
+            </div>
+            <img src="../Images/buePic.png" alt="BUE" class="footerPic">
+        </footer>
+    </section>
+    <script src="Sscript.js"></script>
+    <script src="../moduleScript.js"></script>
+</body>
+
+</html>

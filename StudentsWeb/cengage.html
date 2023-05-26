@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BUE e-learning system">
+  <meta name="keywords" content="BUE, e-learning system, bue, BUE system">
+  <meta name="author" content="Abdelrhman Elshenawy">
+  <title>Tasks</title>
+  <meta name="viewport" content="width=
+    initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../footerStyle.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      /* ===== Colors ===== */
+      --whiteBlue: #4A6572;
+      --darkBlue: #232F34;
+      --midBlue: #384959;
+      --skyBlue: #D5E1E8;
+      --whiteOrange: #FFC56E;
+      --darkOrange: #F9AA33;
+
+      --radius: .3em;
+    }
+
+    main {
+      margin-top: 56px;
+      height: 1000px;
+    }
+    main p, main h1, main h3 {
+      padding: 0%;
+      margin: 0%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 1%;
+      color: var(--midBlue);
+    }
+
+    .header .hLeft {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      margin-top: 10px;
+      justify-content: space-around;
+
+    }
+
+    .header .hRight {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+    }
+
+    .header .hRight select {
+      width: 25vw;
+      height: 25px;
+      color: var(--midBlue);
+      background-color: var(--skyBlue);
+      font-weight: bold;
+    }
+    #modLab {
+      margin-top: 8%;
+    }
+
+    .webAssin {
+      margin: 15px;
+      border-radius: var(--radius);
+      background-color: var(--whiteBlue);
+      color: whitesmoke;
+    }
+
+    .divTitle {
+      padding: 8px;
+      font-size: 19px;
+      font-weight: bold;
+      border-bottom: var(--darkBlue) solid 1px;
+    }
+
+    .divBody {
+      padding: 8px;
+      font-size: 16px;
+      background-color: whitesmoke;
+      color: var(--darkBlue);
+      height: fit-content;
+
+    }
+
+    table {
+      margin: 10px;
+      border-radius: var(--radius);
+      width: calc(100% - 20px);
+      background-color: whitesmoke;
+    }
+
+    th {
+      border: 1px solid var(--darkBlue);
+      padding: 4px;
+      font-weight: bold;
+      text-align: left;
+      font-size: 19px;
+      color: var(--whiteBlue);
+    }
+
+    td {
+      border: 1px solid var(--darkBlue);
+      padding: 4px;
+      color: var(--darkBlue);
+
+    }
+
+    thead th {
+      color: whitesmoke;
+      background-color: var(--whiteBlue);
+      height: 40px;
+      text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background-color: var(--skyBlue);
+      color: var(--darkBlue);
+    }
+
+    .tBtn {
+      margin: 4px 8px;
+      width: 150px;
+      height: 30px;
+      background-color: var(--darkOrange);
+      ;
+      color: white;
+      cursor: pointer;
+
+    }
+
+    .tBtn:hover {
+      background-color: rgb(207, 55, 55);
+      transition: .3s;
+    }
+
+    .leftSec {
+      width: 70%;
+      float: left;
+    }
+
+    .rightSec {
+      width: 30%;
+      float: left;
+    }
+
+    .calendar {
+      display: flex;
+      justify-content: space-between;
+    }
+    .calendar i {
+      font-size: 26px;
+      color: var(--darkBlue);
+    }
+    .calendar input[type=date] {
+      width: 75%;
+      text-align: center;
+      color: var(--darkBlue);
+      font-size: 13px;
+      font-weight: bold;
+    }
+    #dateBtn {
+      background-color: var(--darkOrange);
+      width: 14%;
+      color: white;
+      cursor: pointer;
+    }
+    #dateBtn:hover {
+      background-color: rgb(207, 55, 55);
+      transition: .3s;
+    }
+    .ebook {
+      display: flex;
+    }
+    .ebook a {
+      margin: 8px;
+      font-size: 16px;
+    }
+    .ebook a img {
+      width: 100px;
+      height: 150px;
+    }
+
+    /* Add your style css code here */
+  </style>
+</head>
+
+<body>
+  <nav>
+    <img id="logo" src="../Images/newLogo.png" alt="Logo" onclick="location.href='home.html'">
+    <div class="menu">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="SRS.html" id="srs">SRS</a></li>
+        <li><a href="cengage.html"><span class="onClicked">Tasks</span></a></li>
+        <li><a href="examsHistory.html">Exams</a></li>
+        <li><a href="Grades.html">Grades</a></li>
+      </ul>
+    </div>
+    <div class="personalCard" onclick="displayCard()">
+      <p>Abdelrhman</p>
+      <img src="../Images/avatar.jpg" alt="avatare">
+    </div>
+    <div class="clickedCard display" id="clcCard">
+      <div class="header">
+        <p>The British University in Egypt</p>
+        <div class="accName" onclick="location.href='../Login forms/index.html'">
+          <p>Sign out</p>
+        </div>
+      </div>
+      <div class="body">
+        <img src="../Images/avatar.jpg" alt="avatar">
+        <div class="info">
+          <p>Abdelrhman Elshenawy</p>
+          <p>225328</p>
+          <p>abd.elrhman225328@bue.edu.eg</p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <main>
+
+    <!-- ####### Start coding Here ######## -->
+    <div class="header">
+      <div class="hRight">
+        <h1>Home</h1>
+        <label for="modules" id="modLab">Select Course</label>
+        <select name="modules" id="modules">
+          <option value="descete">Descrete</option>
+          <option value="math">Mathematices ll</option>
+          <option value="physics">Physics</option>
+          <option value="web">Web Programming</option>
+        </select>
+      </div>
+      <div class="hLeft">
+        <div class="title"><i class='bx bxs-graduation'></i> INSTRUCTOR</div>
+        <h3>Nivine Atef</h3>
+        <p>The British University in Egypt</p>
+      </div>
+    </div>
+    <div class="webAssin">
+      <div class="divTitle">
+        Web Assign Notices
+      </div>
+      <div class="divBody">
+        <p>You were granted access to this class Saturday, March 5, 2022 9:26:23 PM GMT+2</p>
+      </div>
+    </div>
+    <div class="leftSec">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">My Assignments</th>
+          </tr>
+        </thead>
+        <tr>
+          <th>Name</th>
+          <th>Due</th>
+        </tr>
+        <tr>
+          <td><a href="assignment.html">In-class test 1</a></td>
+          <td>Sun, Jun 19, 2022, 5:59 AM GMT+2</td>
+        </tr>
+        <tr>
+          <td><a href="assignment.html">In-class test 2</a></td>
+          <td>Fri, Sep 30, 2022, 11:58 PM GMT+2</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button class="tBtn">Current Assignments</button><button class="tBtn">Past Assessments</button>
+          </td>
+        </tr>
+      </table>
+      <div class="webAssin">
+        <div class="divTitle">
+          Communication
+        </div>
+        <div class="divBody">
+          <p>No current forums</p>
+        </div>
+      </div>
+      <div class="webAssin">
+        <div class="divTitle">
+          Grades
+        </div>
+        <div class="divBody">
+          <p>Your final grade has not yet been posted</p>
+        </div>
+      </div>
+    </div>
+    <div class="rightSec">
+      <div class="webAssin">
+        <div class="divTitle">
+          Announcements
+        </div>
+        <div class="divBody">
+          <p>No Current Announcements</p>
+        </div>
+      </div>
+      <div class="webAssin">
+        <div class="divTitle">
+          My Calendar
+        </div>
+        <div class="divBody calendar">
+          <label for="date"><i class='bx bxs-calendar'></i></label>
+          <input type="date" id="date">
+          <button id="dateBtn">Go</button>
+        </div>
+      </div>
+      <div class="webAssin">
+        <div class="divTitle">
+          About this Class
+        </div>
+        <div class="divBody">
+          <p><strong>Class Started:</strong> Wednesday, February 23, 2022</p><br>
+          <p><strong>Class Ends:</strong> Friday, September 30, 2022 </p><br>
+          <div class="ebook">
+            <a href="files/Chapter1ReviewQuestions(WebProgramming).pdf"><img src="../Images/ebook.jfif"
+                alt="ebook"></a>
+            <a href="files/Chapter1ReviewQuestions(WebProgramming).pdf"> Web Design - 6th Edition</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <footer>
+    <div class="info">
+      <div class="support">
+        <h1>Technical Support:</h1>
+        <a href="mailto:seif.yasser@bue.edu.eg">seif.yasser@bue.edu.eg</a>
+        <a href="mailto:islam.yasser@bue.edu.eg">islam.yasser@bue.edu.eg</a>
+        <div class="socialIcons">
+          <a href="https://www.bue.edu.eg/" target="_blank"><img src="../Images/website_icon.png" alt="website"></a>
+          <a href="https://www.facebook.com/thebritishuniversityegypt" target="_blank"><img
+              src="../Images/facebook_icon.png" alt="Facebbok"></a>
+          <a href="https://twitter.com/bue_university" target="_blank"><img src="../Images/twitter_icon.png"
+              alt="Twitter"></a>
+          <a href="https://www.youtube.com/channel/UCqvAvU8X3_3cmRZexwPhucg" target="_blank"><img
+              src="../Images/youtube_icon.png" alt="YouTube"></a>
+          <a href="https://www.instagram.com/thebritishuniversityinegypt/" target="_blank"><img
+              src="../Images/instagram_icon.png" alt="Instagram"></a>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h1>Contact</h1>
+        <div class="contactIcons">
+          <a target="_blank" href="mailto:info.bue.edu.eg"><img src="../Images/email.png" alt="email"></a>
+          <a target="_blank" href="tel:+2019283"><img src="../Images/call.png" alt="call"></a>
+          <a target="_blank"
+            href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">
+            <img src="../Images/location.png" alt="email"></a>
+        </div>
+        <div class="contactText">
+          <a target="_blank" href="mailto:info.bue.edu.eg" class="textContact">info.bue.edu.eg</a>
+          <a target="_blank" href="tel:+2019283" class="textContact">+20 19283</a>
+          <a target="_blank"
+            href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">
+            El Sherouk City, Suez Desert Road,<br>Cairo 11837 - P.O. Box 43</a>
+        </div>
+      </div>
+
+      <div class="links">
+        <h1>Quick Links</h1>
+
+        <ul>
+          <li><img src="../Images/arrow_icon.png" alt="home"><a href="home.html">Home</a></li>
+          <li><img src="../Images/arrow_icon.png" alt="SRS"><a href="SRS.html">SRS</a></li>
+          <li><img src="../Images/arrow_icon.png" alt="Tasks"><a href="cengage.html">Tasks</a></li>
+          <li><img src="../Images/arrow_icon.png" alt="Exams"><a href="examsHistory.html">Exams</a></li>
+          <li><img src="../Images/arrow_icon.png" alt="Grades"><a href="Grades.html">Grades</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyRight">
+      <img src="../Images/newLogo.png" alt="home">
+      <p>Copyright &copy; 2020 BUE , All rights reserved. Last Updated January 2022.</p>
+    </div>
+    <img src="../Images/buePic.png" alt="BUE" class="footerPic">
+  </footer>
+  <script src="Sscript.js"></script>
+</body>
+
+</html>

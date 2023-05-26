@@ -1,0 +1,92 @@
+:root {
+    --whiteBlue: #4A6572;
+    --darkBlue: #232F34;
+    --midBlue: #384959;
+    --skyBlue: #D5E1E8;
+    --whiteOrange: #FFC56E;
+    --darkOrange: #F9AA33;
+}
+
+.wrapper .sidebar {
+
+    margin-top: 55px;
+    /* margin-bottom: 200px; */
+    background: #384a54;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    padding: 20px 0px 0px;
+    transition: all 0.5s ease;
+}
+
+.profile {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.profile img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.profile h3 {
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.profile p {
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0%;
+}
+.sidebar ul li a {
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #ADC2CE;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.sidebar ul li a .icon {
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+.logo {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+}
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    color: #F9AA33;
+
+    background: #213443;
+    border-right: 2px solid rgb(174, 195, 207);
+}
+
+
+
+body.active .wrapper .sidebar {
+    left: -225px;
+}
+
+body.active .wrapper .section {
+    margin-left: 0;
+    width: 100%;
+}
+
+.main {
+    margin-left: 280px;
+    margin-top: 55px;
+    height: 590px;
+}

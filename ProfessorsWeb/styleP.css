@@ -1,0 +1,529 @@
+body {
+  background-color: #d5e2ea;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/*CSS below is for Top Navigation Bar*/
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  background-color: #232F34;
+}
+
+/* Logo section*/
+.logo {
+  display: block;
+  height: 75px;
+  margin-right: 110px;
+  
+}
+
+/*search Bar*/
+.search-box {
+  background: #fff;
+  margin: auto 0px auto;
+  height: 40px;
+  border-radius: 40px;
+  width: 43%;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding-left: 2%;
+  color: #000;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 75%;
+}
+
+
+.search-box button {
+  float: right;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  border: none
+}
+
+.search-box:hover>button {
+  background-color: #5d7da3;
+  transition: 0.5s;
+}
+
+.search-box button:hover {
+  background: grey;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.search-box img {
+  vertical-align: middle;
+}
+
+/* LogOut, create new course*/
+
+
+.logout button {
+  font-size: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #496571;
+  padding: 7px 25px;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 10px;
+
+}
+
+
+.logout button:hover {
+  background-color: #fff;
+}
+
+.logout button a:hover {
+  color: black;
+}
+
+
+/* Top bar 2 in exam list*/
+.topbar2 {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 70px;
+  background-color: #384959;
+}
+
+.topbar2 a{
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #f2f2f2;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+  float: left;
+}
+.topbar2 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topbar2 a.active {
+  background-color: #ddd;
+  color: black;}
+/* CSS below is for Side Navigation Bar*/
+.wrapper {
+  display: flex;
+}
+
+.sidebar {
+  margin-top:70px;
+  position: absolute;
+  width: 20%;
+  height: 1200px;
+  background-color: #232F34;
+}
+
+.mainExamList {
+  display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3.5% auto;
+    overflow: visible;
+    height: auto;
+    width: 65%;
+}
+
+/*CSS for Profile */
+.profile {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: #384959;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+}
+
+h1 {
+  color: #F9AA33;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+}
+
+/*Navigation buttons*/
+.MainMenu {
+  padding: 0.5em 0;
+  margin: 0;
+  padding-top: 0px;
+}
+
+.MainMenu li {
+  padding: 7%;
+  font-size: 20px;
+  background-color: #496571;
+  border-bottom: 1px solid #F9AA33;
+  border-top: 1px solid #F9AA33;
+}
+
+.MainMenu li a {
+  color: #FFF;
+  display: block;
+  padding-left: 5%;
+  text-decoration: none;
+}
+
+.MainMenu li:hover {
+  background-color: #d5e2ea;
+  cursor: pointer;
+}
+
+.MainMenu li a:hover {
+  color: black;
+}
+
+/*.SubMenu {
+  display: none;
+}*/
+
+.SubMenu li {
+  padding: 5%;
+}
+
+.SubMenu li a {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+/*
+.MainMenu:hover>.SubMenu {
+  display: block;
+}*/
+
+/*Submenu*/
+
+
+.SubMenu ul li a {
+  background-color: #000;
+  font-size: 1px;
+}
+
+/*Analyze page*/
+main {
+  height: 800px;
+  margin-left: 20%;
+}
+main .topbar {
+display: flex;
+flex-wrap: wrap;
+overflow: hidden;
+height: 65px;
+width: 100%;
+background-color: #384959;
+justify-content:space-around;
+
+}
+
+main .topbar a{
+font-size: 27px;
+font-family: sans-serif;
+color: #f2f2f2;
+text-decoration: none;
+text-align: right;
+padding: 14px 16px;
+float: left;
+margin-right: 3%;
+}
+main .topbar a:hover {
+background-color: #ddd;
+color: black;
+}
+main .topbar a.active {
+background-color: #ddd;
+color: black;}
+
+.bar2 {
+padding: 10px 15px;
+background-color: #f2f2f2;
+
+}
+.des {
+color: rgb(142, 143, 145);
+display: inline-block;
+}
+
+.bar3{
+text-align: end;
+background-color: #c2c1c1c7;
+}
+.bar3 button{
+
+font-size: 20px;
+font-family: sans-serif;
+border-radius:5px;
+cursor: pointer;
+
+}
+
+#showHide {
+color:red;
+}
+/* main section (cards and footer)*/
+.button {
+  border: none;
+  border-radius: 8px;
+  background-color: #adadad;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #9c0000;
+  color: white;
+}
+
+
+.container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  
+}
+
+.container img {
+  max-width: 100%;
+  max-height: 160px;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  background: #FFF;
+  width: 25%;
+}
+
+
+
+.card__body {
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h5{ 
+  font-size: 25px;
+}
+.card__body h4 {
+  font-size: 1.0rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 black
+}
+
+.card ul {
+  list-style: none;
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+.card ul li {
+  padding: 1em 1em 0.5em 1.7em;
+  font-size: 1.5em;
+  background-position: center;
+  background-size: 20px;
+  transition: all 0.15s linear;
+  cursor: pointer;
+}
+
+.container .card ul li:hover {
+  background-color: black
+}
+
+
+/* card members */
+.containerMember {
+  
+  width: 400px;
+height: 430px;
+background: #FFF;
+box-shadow: 0px 1px 10px 1px #000;
+overflow: hidden;
+display: inline-block;
+}
+.upperContainerMember{
+  height: 150px;
+  background: #232F34;
+  }
+.lowerContainerMember {
+  height: 280px;
+  background: #FFF;
+  padding: 20px;
+  padding-top: 40px;
+  text-align: center;
+}
+h3 h4{
+  box-sizing: border-box;
+line-height: .6;
+font-weight: lighter;
+}
+h4{
+  font-size: 15px;
+  font-weight: bold;
+  }
+.cardProfile{
+  background: white;
+width: 80px;
+height: 80px;
+border-radius: 50%;
+padding: 5px;
+transform: translate(100px,100px);
+}
+.cardProfile img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* Margin between top and side bars*/
+
+.main {
+  margin-left: 19.2%;
+  /* Same as the width of the sidenav */
+  
+  /* same as the height of topnav*/
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 0px 10px 20px;
+}
+
+.main2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+}
+ 
+/* Create course */
+input[id=Cinfo], input[id=Cdescription], input[id=Cname]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[id=contact],input[id=contact1], input[id=contact2], input[id=contact3], input[id=contact4], input[id=contact5]{
+  width: 49.7%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[id=description]{
+ height: 200px;
+ width:100%
+}
+
+/* Set a style for all buttons */
+.save{
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+
+.CourseContainer {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #232F34;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #F9AA33;
+  width: 80%; 
+}
+
+/* Change styles for span and cancel button on extra small screens */
+ 
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 15%;
+  }
+b
+{color: #fff;}

@@ -1,0 +1,414 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BUE e-learning system">
+    <meta name="keywords" content="BUE, e-learning system, bue, BUE system">
+    <meta name="author" content="Abdelrhman Elshenawy">
+    <title>Tasks</title>
+    <meta name="viewport" content="width=
+    initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../footerStyle.css">
+    <link rel="stylesheet" type="text/css" href="page.css">
+    <style>
+        main {
+            margin-top: 160px;
+            width: 100%;
+            height: 2300px;
+        }
+
+        .button {
+            background-color: #06589F;
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 300px;
+            cursor: pointer;
+        }
+
+        .navbar {
+
+            display: inline-flex;
+
+            width: 100%;
+
+            height: 80px;
+
+            background: #06589F;
+
+            margin-top: 56px;
+
+
+
+        }
+
+        .navbar .title h1 {
+
+            color: white;
+
+            font-size: 28px;
+
+            margin: 20px;
+
+        }
+
+        h2 {
+
+            color: white;
+
+            font-size: 28px;
+
+            margin: 20px;
+            margin-left: 350px;
+
+
+        }
+
+        h3 {
+
+            color: white;
+
+            font-size: 28px;
+
+            margin: 20px;
+            margin-left: 200px;
+            color: white
+        }
+
+
+
+        .box h3 {
+            width: 120px;
+
+
+
+
+
+            background-color: red;
+        }
+
+
+        #lang {
+
+            margin: 10px;
+            font-size: 20px;
+        }
+
+
+
+        .Choose {
+            /* /            margin-left: 800px; */
+            margin-top: -20px;
+            font-size: 25px;
+        }
+
+        #sub {
+            font-size: 20px;
+        }
+
+        .Answer {
+
+            margin: 20px;
+            font-size: 25px;
+        }
+
+        /*
+#leftside {
+width: 1050px;
+}
+
+.rightside
+{
+width: 300px;
+margin-left: 1200px;
+margin-top: -500px;
+}
+*/
+        /* .split {
+
+            height: 100%;
+            /*width: 40%;
+            position: absolute;
+            top: 55px;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .left {
+            left: 0px;
+            width: 1000px;
+        }
+
+        .right {
+            right: -150px;
+            margin-top: 40px;
+        }
+
+        .numbers {
+            margin-right: 350px;
+            font-size: 20px;
+            color: blue;
+            border: 50px solid blue;
+            border-radius: 120px;
+            padding: 50px;
+
+            margin-right: 300px;
+            margin-top: 0px;
+
+
+
+        } */
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img id="logo" src="../Images/newLogo.png" onclick="location.href='home.html'">
+        <div class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="SRS.html" id="srs">SRS</a></li>
+                <li><a href="cengage.html"><span class="onClicked">Tasks</span></a></li>
+                <li><a href="examsHistory.html">Exams</a></li>
+                <li><a href="Grades.html">Grades</a></li>
+            </ul>
+        </div>
+        <div class="personalCard" onclick="displayCard()">
+            <p>Abdelrhman</p>
+            <img src="../Images/avatar.jpg" alt="avatare">
+        </div>
+        <div class="clickedCard display" id="clcCard">
+            <div class="header">
+                <p>The British University in Egypt</p>
+                <div class="accName" onclick="location.href='../Login forms/index.html'">
+                    <p>Sign out</p>
+                </div>
+            </div>
+            <div class="body">
+                <img src="../Images/avatar.jpg" alt="avatar">
+                <div class="info">
+                    <p>Abdelrhman Elshenawy</p>
+                    <p>225328</p>
+                    <p>abd.elrhman225328@bue.edu.eg</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- #### Start coding here #### -->
+
+        <div class="split left">
+
+            <nav class="navbar">
+
+
+
+                <div class="title">
+
+                    <h1>Online Test:- </h1>
+
+
+
+                </div>
+
+
+                <h2> Remaining Time:- </h2>
+
+                <div class="box">
+
+                    <h3> 00:23:19 </h3>
+
+                </div>
+
+
+
+
+            </nav>
+
+            <!--
+            <form action="/action_page.php">
+                <label for="lang">Language:</label>
+                <select name="lang" id="lang">
+                    <option value="English">English</option>
+                    <option value="Arabic">Arabic</option>
+                    <option value="French">French</option>
+                    <option value="German">German</option>
+                </select>
+
+            </form> -->
+            <div class="Choose">
+                <form action="/action_page.php">
+                    <label for="sub">Subject:</label>
+                    <select name="sub" id="sub">
+                        <option value="Programming">Programming</option>
+                        <option value="Math">Arabic</option>
+                        <option value="Web Programmig=ng">Web Programming</option>
+
+                    </select>
+
+                </form>
+            </div>
+
+            <div class="Answer">
+                <h4> Q1.)Using....Function we can hold or release the execution of jQuery's ready event.</h4>
+                <form action="/action_page.php"> <br>
+                    <input type="checkbox" ID="answer" name="answer" value="Ans">
+                    <labelfor="JQueryholdReady()"> JQueryholdReady()</label><br>
+                        <input type="checkbox" ID="answer2" name="answer2" value="Ans">
+                        <labelfor="answer2">JQueryready()</label><br>
+                            <input type="checkbox" ID="answer3" name="answer3" value="Ans">
+                            <labelfor="vehicle3"> JQueryhold()</label><br>
+                                <input type="checkbox" ID="answer4" name="answer4" value="Ans">
+                                <labelfor="vehicle3"> JQueryholdready()</label><br><br>
+                                    <a href="#" class="button">Save</a>
+                </form>
+            </div>
+            <br>
+            <div class="Answer">
+                <h4> Q2.)Which property provides a way for you to rotate, scale, skew, or move an
+                    element?
+                    .</h4>
+                <form action="/action_page.php"> <br>
+                    <input type="checkbox" ID="answer" name="answer" value="Ans">
+                    <labelfor=" display> display</label><br>
+                        <input type="checkbox" ID="answer2" name="answer2" value="Ans">
+                        <labelfor=" transition"> transition</label><br>
+                            <input type="checkbox" ID="answer3" name="answer3" value="Ans">
+                            <labelfor="transform">transform</label><br>
+                                <input type="checkbox" ID="answer4" name="answer4" value="Ans">
+                                <labelfor="list-style-type"> list-style-type</label><br><br>
+                                    <a href="#" class="button">Save</a>
+                </form>
+            </div>
+            <br>
+            <div class="Answer">
+                <h4> Q3.)Using....Function we can hold or release the execution of jQuery's ready event.</h4>
+                <form action="/action_page.php"> <br>
+                    <input type="checkbox" ID="answer" name="answer" value="Ans">
+                    <labelfor="JQueryholdReady()"> JQueryholdReady()</label><br>
+                        <input type="checkbox" ID="answer2" name="answer2" value="Ans">
+                        <labelfor="answer2"> JQueryready()</label><br>
+                            <input type="checkbox" ID="answer3" name="answer3" value="Ans">
+                            <labelfor="vehicle3"> JQueryhold()</label><br>
+                                <input type="checkbox" ID="answer4" name="answer4" value="Ans">
+                                <labelfor="vehicle3"> JQueryholdready()</label><br><br>
+                                    <a href="#" class="button">Save</a>
+                </form>
+            </div>
+            <br>
+            <div class="Answer">
+                <h4> Q4.)Which type of files are .webm, ogv and m4v?
+                </h4>
+                <form action="/action_page.php"> <br>
+                    <input type="checkbox" ID="answer" name="answer" value="Ans">
+                    <labelfor="audio files"> audio files</label><br>
+                        <input type="checkbox" ID="answer2" name="answer2" value="Ans">
+                        <labelfor="video files"> video files </label><br>
+
+                            <input type="checkbox" ID="answer3" name="answer3" value="Ans">
+                            <labelfor="Hash files"> Hash files</label><br>
+                                <input type="checkbox" ID="answer4" name="answer4" value="Ans">
+                                <label for="none of the above">none of the above. </label><br><br>
+                                <a href="#" class="button">Save</a>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- <div class="split right">
+            <div class="rightside">
+
+
+
+                <div class="numbers">
+
+                    <li>Refrences:-</li>
+                    <button onclick="document.location='default.asp'">1</button> <button
+                        onclick="document.location='default.asp'">7</button><br><br><button
+                        onclick="document.location='default.asp'">2</button> <button
+                        onclick="document.location='default.asp'">8</button> <br><br>
+                    <button onclick="document.location='default.asp'">3</button> <button
+                        onclick="document.location='default.asp'">9</button><br><br>
+                    <button onclick="document.location='default.asp'">4</button> <button
+                        onclick="document.location='default.asp'">10</button><br><br>
+                    <button onclick="document.location='default.asp'">5</button> <button
+                        onclick="document.location='default.asp'">11</button><br><br>
+                    <button onclick="document.location='default.asp'">6</button> <button
+                        onclick="document.location='default.asp'">12</button><br><br>
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+ -->
+
+    </main>
+
+    <footer>
+        <div clas0s="info">
+            <div class="support">
+                <h1>Technical Support:</h1><a href="mailto:seif.yasser@bue.edu.eg">seif.yasser@bue.edu.eg</a><a
+                    href="mailto:islam.yasser@bue.edu.eg">islam.yasser@bue.edu.eg</a>
+                <div class="socialIcons"><a href="https://www.bue.edu.eg/"><img src="../Images/website_icon.png"
+                            alt="website"></a><a href="https://www.facebook.com/thebritishuniversityegypt"><img
+                            src="../Images/facebook_icon.png" alt="Facebbok"></a><a
+                        href="https://twitter.com/bue_university"><img src="../Images/twitter_icon.png"
+                            alt="Twitter"></a><a href="https://www.youtube.com/channel/UCqvAvU8X3_3cmRZexwPhucg"><img
+                            src="../Images/youtube_icon.png" alt="YouTube"></a><a
+                        href="https://www.instagram.com/thebritishuniversityinegypt/"><img
+                            src="../Images/instagram_icon.png" alt="Instagram"></a></div>
+            </div>
+            <div class="contact">
+                <h1>Contact</h1>
+                <div class="contactIcons"><a href="mailto:info.bue.edu.eg"><img src="../Images/email.png"
+                            alt="email"></a><a href="tel:+2019283"><img src="../Images/call.png" alt="call"></a><a
+                        href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US"><img
+                            src="../Images/location.png" alt="email"></a></div>
+                <div class="contactText"><a href="mailto:info.bue.edu.eg" class="textContact">info.bue.edu.eg</a><a
+                        href="tel:+2019283" class="textContact">+20 19283</a><a
+                        href="https://www.google.com/maps/place/The+British+University+in+Egypt+-+BUE/@30.1176135,31.6078758,17z/data=!4m5!3m4!1s0x14581dea54fc683b:0xfb58c4d6f97e0173!8m2!3d30.1177753!4d31.605976?hl=en-US">El
+                        Sherouk City,
+                        Suez Desert Road,
+                        <br>Cairo 11837 - P.O. Box 43</a></div>
+            </div>
+            <div class="links">
+                <h1>Quick Links</h1>
+                <ul>
+                    <li><img src="../Images/arrow_icon.png" alt="home"><a href="home.html">Home</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="SRS"><a href="SRS.html">SRS</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="Tasks"><a href="cengage.html">Tasks</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="Exams"><a href="examsHistory.html">Exams</a></li>
+                    <li><img src="../Images/arrow_icon.png" alt="Grades"><a href="Grades.html">Grades</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyRight"><img src="../Images/newLogo.png" alt="home">
+            <p>Copyright &copy;
+                2020 BUE,
+                All rights reserved. Last Updated January 2022.</p>
+        </div><img src="../Images/buePic.png" alt="BUE" class="footerPic">
+    </footer>
+    <script src="Sscript.js"></script>
+</body>
+
+</html>
